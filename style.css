@@ -87,6 +87,7 @@ body {
 
 .unique {
     color: #a0102f;
+    padding-top: 15px;
 }
 
 .note {
@@ -191,3 +192,4 @@ body {
 
 
 /* In your JS, change the body.style.backgroundColor with each click! */
+
