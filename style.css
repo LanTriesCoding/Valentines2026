@@ -72,7 +72,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), #ffc9c5), url('images/banquet.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), #ffc9c5), url('banquet.jpg');
     /* background-color: #ffc9c5; */
     color: #343434;
 }
