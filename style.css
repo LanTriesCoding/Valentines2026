@@ -152,17 +152,34 @@ body {
     /* Subtle bounce when changing */
 }
 
+/* have card expand!! */
 #v-card-3 {
-    width: 100%;
-    /* Mobile priority */
-    /* Desktop limit */
+    width: 90%;          /* Gives it a 5% margin on each side */
+    max-width: 500px;    /* Keeps it from looking stretched on laptop */
+    height: auto;        /* CRITICAL: Allows card to grow with your text */
     min-height: 40vh;
-    /* Takes up significant vertical space */
-    background: var(--card-bg);
+    padding-bottom: 2rem; 
     border-radius: 30px;
     border: none;
+    background: rgba(255, 255, 255, 0.9); /* Ensures she can read the text over the tulips */
     transition: transform 0.3s ease;
-    /* Subtle bounce when changing */
+    margin: 20px 0;      /* Adds breathing room top and bottom */
+    overflow: visible !important; /* Forces the box to wrap around the text */
+}
+
+/* Ensure the images stay inside the box */
+#our-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Fix the 'Full Screen' container to allow scrolling if the card is long */
+main.vh-100 {
+    height: auto !important;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .fade-in {
@@ -180,8 +197,5 @@ body {
     }
 }
 
-
-
-/* In your JS, change the body.style.backgroundColor with each click! */
 
 
