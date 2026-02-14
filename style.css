@@ -1,12 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
-:root {
-    --header:
+.borel-regular {
+    font-family: "Borel", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
+.borel-bold {
+    font-family: "Borel", cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nanum-pen-script-regular {
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playfair-display-sc-regular {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.gamja-flower-regular {
+    font-family: "Gamja Flower", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 900, 'GRAD' 0, 'opsz' 24
+} */
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    /* Aligns it with your text */
+    font-size: 24px;
+    /* Adjust size as needed */
+    cursor: pointer;
+    /* Or your primary red variable */
+}
+
+a {
+    color: #343434
+}
+
+a:link {
+    color: rgb(254, 16, 64);
+}
+
+a:visited {
+    color: darkslateblue;
+}
+
+a:hover {
+    color: purple;
+}
+
+a:active {
+    color: palevioletred;
+}
+
+html,
 body {
-    background-color: #ffc9c5;
-    /* Start neutral */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), #ffc9c5), url('images/banquet.jpg');
+    /* background-color: #ffc9c5; */
+    color: #343434;
+}
+
+main {
+    /* background-color: #ffc9c5; */
+}
+
+.title {
+    font-size: 3.5rem;
+}
+
+.subtitle {
+    font-size: 3rem;
+}
+
+.unique {
+    color: #a0102f;
+}
+
+.note {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90% !important;
+        padding: 1.5rem !important;
+        margin: 10px;
+    }
+}
+
+.flower-bg {
+    position: fixed;
+    z-index: -1;
+    opacity: 0.7;
+    pointer-events: none;
+    /* max-width: 100;
+    height: auto;
+    object-fit: contain; */
+}
+
+#our-img {
+    z-index: -1;
+    max-width: 500px;
+}
+
+#v-card {
+    width: 100%;
+    /* Mobile priority */
+    max-width: 700px;
+    /* Desktop limit */
+    min-height: 40vh;
+    /* Takes up significant vertical space */
+    background: var(--card-bg);
+    border-radius: 30px;
+    border: none;
+    transition: transform 0.3s ease;
+    /* Subtle bounce when changing */
+}
+
+#v-card-3 {
+    width: 100%;
+    /* Mobile priority */
+    /* Desktop limit */
+    min-height: 40vh;
+    /* Takes up significant vertical space */
+    background: var(--card-bg);
+    border-radius: 30px;
+    border: none;
+    transition: transform 0.3s ease;
+    /* Subtle bounce when changing */
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
