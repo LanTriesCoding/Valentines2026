@@ -134,13 +134,13 @@ body {
 
     #v-card-3 {
     width: 90%;          /* Gives it a 5% margin on each side */
-    max-width: 500px;    /* Keeps it from looking stretched on laptop */
+    max-width: 700px;    /* Keeps it from looking stretched on laptop */
     height: auto;        /* CRITICAL: Allows card to grow with your text */
     min-height: 40vh;
     border-radius: 30px;
     border: none;
     transition: transform 0.3s ease;
-    overflow: visible !important; /* Forces the box to wrap around the text */
+    /* overflow: visible !important;  Forces the box to wrap around the text */
 }
 }
 
@@ -171,7 +171,7 @@ body {
     border-radius: 30px;
     border: none;
     transition: transform 0.3s ease;
-    overflow: visible !important; /* Forces the box to wrap around the text */
+    /* overflow: visible !important; /* Forces the box to wrap around the text */
 }
 
 /* Ensure the images stay inside the box */
@@ -203,6 +203,7 @@ main.vh-100 {
         transform: translateY(0);
     }
 }
+
 
 
 
