@@ -131,6 +131,17 @@ body {
         margin-top: 0.5rem !important;
         width: 90% !important;
     }
+
+    #v-card-3 {
+    width: 90%;          /* Gives it a 5% margin on each side */
+    max-width: 500px;    /* Keeps it from looking stretched on laptop */
+    height: auto;        /* CRITICAL: Allows card to grow with your text */
+    min-height: 40vh;
+    border-radius: 30px;
+    border: none;
+    transition: transform 0.3s ease;
+    overflow: visible !important; /* Forces the box to wrap around the text */
+}
 }
 
 #our-img {
@@ -139,13 +150,12 @@ body {
 }
 
 #v-card {
-    width: 100%;
+    width: 90%;
     /* Mobile priority */
     max-width: 700px;
     /* Desktop limit */
     min-height: 40vh;
     /* Takes up significant vertical space */
-    background: var(--card-bg);
     border-radius: 30px;
     border: none;
     transition: transform 0.3s ease;
@@ -155,15 +165,12 @@ body {
 /* have card expand!! */
 #v-card-3 {
     width: 90%;          /* Gives it a 5% margin on each side */
-    max-width: 500px;    /* Keeps it from looking stretched on laptop */
+    max-width: 700px;    /* Keeps it from looking stretched on laptop */
     height: auto;        /* CRITICAL: Allows card to grow with your text */
-    min-height: 40vh;
-    padding-bottom: 2rem; 
+    min-height: 40vh
     border-radius: 30px;
     border: none;
-    background: rgba(255, 255, 255, 0.9); /* Ensures she can read the text over the tulips */
     transition: transform 0.3s ease;
-    margin: 20px 0;      /* Adds breathing room top and bottom */
     overflow: visible !important; /* Forces the box to wrap around the text */
 }
 
@@ -196,6 +203,7 @@ main.vh-100 {
         transform: translateY(0);
     }
 }
+
 
 
 
